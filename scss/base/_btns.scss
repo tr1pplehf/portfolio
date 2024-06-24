@@ -1,0 +1,36 @@
+.btn-contact {
+    display: inline-block;
+    padding: 12px 20px;
+
+    border-radius: 6px;
+    background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+    font-weight: 500;
+    color: #252728;
+
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    @include mobile {
+        padding: 8px 12px;
+    }
+}
+
+.btn-see-projects {
+    display: inline-block;
+    padding: 18px 15px;
+    text-align: center;
+    
+    border-radius: 6px;
+    background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+    font-weight: 500;
+    color: #252728;
+
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

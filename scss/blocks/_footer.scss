@@ -1,0 +1,36 @@
+.footer {
+    margin-bottom: 20px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.socials__list {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.socials__list-item {
+    img {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #bdebea;
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+}
+
+.footer__copyright {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+}

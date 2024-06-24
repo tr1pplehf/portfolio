@@ -1,0 +1,24 @@
+.projects {
+    scroll-margin-top: 30px;
+}
+
+.projects__title {
+    margin-bottom: 32px;
+    @include tablet {
+        text-align: center;
+    }
+}
+
+.projects__cards {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    @include tablet {
+        justify-content: center;
+    }
+}
+
+.projects__button {
+    text-align: center;
+}
