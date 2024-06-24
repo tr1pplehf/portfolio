@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
     <title>Данил Якименко - Фронтенд разработчик</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./js/fancybox/fancybox.css">
 </head>
 
 <body>
@@ -17,7 +18,8 @@
                         <li class="nav__list-item"><a href="#about" class="nav__list-link">Обо мне</a></li>
                         <li class="nav__list-item"><a href="#projects" class="nav__list-link">Проекты</a></li>
                         <li class="nav__list-item"><a href="#skills" class="nav__list-link">Навыки</a></li>
-                        <li class="nav__list-item"><button class="btn-contact">Контакты</button></li>
+                        <li class="nav__list-item"><button class="btn-contact" data-fancybox
+                                data-src="#dialog-content">Контакты</button></li>
                     </ul>
                 </nav>
                 <div class="ham-menu" id="mobileNavOpen">
@@ -239,6 +241,52 @@
         </div>
     </footer>
 
+    <section class="modal__body" id="dialog-content">
+        <div class="modal__header">
+            <h2 class="modal__title">Контакты</h2>
+        </div>
+        <form class="modal__inputs">
+            <input type="text" class="input" placeholder="Имя">
+            <input type="tel" class="input" placeholder="Телефон (Необязательно)">
+            <input type="text" class="input" placeholder="Сообщение">
+
+            <label class="modal__checkbox-label">
+                <input type="checkbox" class="real-checkbox visually-hidden">
+                <span class="fake-checkbox"></span>
+                Даю согласие на обработку персональных данных
+            </label>
+            <div class="modal__btn">
+                <button class="btn-contact btn-contact--small">Оставить заявку</button>
+            </div>
+        </form>
+        <div class="modal__header">
+            <h2 class="modal__title">Свяжитесь со мной в социальных сетях</h2>
+        </div>
+        <div class="modal__socials">
+            <ul class="socials__list">
+                <li class="socials__list-item">
+                    <a href="https://t.me/never_divine">
+                        <img src="./img/socials/telegram.svg" alt="Telegram">
+                        <p>Telegram</p>
+                    </a>
+                </li>
+                <li class="socials__list-item">
+                    <a href="https://vk.com/never_divine">
+                        <img src="./img/socials/vk.svg" alt="VK">
+                        <p>VK</p>
+                    </a>
+                </li>
+                <li class="socials__list-item">
+                    <a href="https://github.com/tr1pplehf">
+                        <img src="./img/socials/github.svg" alt="GitHub">
+                        <p>GitHub</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./js/fancybox/fancybox.umd.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/mobile-nav.js"></script>
 </body>

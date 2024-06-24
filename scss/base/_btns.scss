@@ -16,6 +16,10 @@
     @include mobile {
         padding: 8px 12px;
     }
+
+    &--small {
+        width: 200px;
+    }
 }
 
 .btn-see-projects {

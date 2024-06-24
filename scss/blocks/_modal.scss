@@ -1,0 +1,36 @@
+.modal__body {
+    width: 450px;
+    border-radius: 40px !important;
+    background-color: #041F31 !important;
+    color: #BDEBEA !important;
+}
+
+.modal__header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.modal__title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.modal__inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    input {
+        padding: 15px;
+        border: 2px solid #f0d1d1;
+        border-radius: 15px;
+    }
+
+    input::placeholder {
+        color: #ffffff;
+    }
+}
+
+.modal__btn {
+    margin-bottom: 30px;
+    text-align: center;
+}
