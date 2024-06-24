@@ -1,0 +1,23 @@
+.card-modal {
+    width: 700px;
+    border-radius: 20px !important;
+    background-color: #222525 !important;
+
+    .card {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .card__img {
+        border-radius: 5px;
+    }
+
+    .card__desc {
+        color: #BDEBEA;
+    }
+
+    @include tablet {
+        width: 550px;
+    }
+
+}

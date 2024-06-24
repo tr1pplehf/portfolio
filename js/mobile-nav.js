@@ -21,5 +21,6 @@ mobileNavList.forEach(function(i){
     i.addEventListener('click', function(){
         mobileNav.classList.remove('mobile-nav--open');
         navScroll.classList.remove('no-scroll');
+        mobileNavClose.classList.remove('active');
     })
 })

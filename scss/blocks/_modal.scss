@@ -3,6 +3,19 @@
     border-radius: 40px !important;
     background-color: #041F31 !important;
     color: #BDEBEA !important;
+    display: none;
+
+    @include mobile {
+        width: 330px;
+    }
+}
+
+.modal__socials {
+    .socials__list {
+        @include mobile {
+            gap: 30px;
+        }
+    }
 }
 
 .modal__header {

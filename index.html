@@ -32,6 +32,7 @@
     </header>
     <section class="mobile-nav">
         <div class="container">
+            <h2 class="visually-hidden">.</h2>
             <div class="mobile-nav__header">
                 <div class="ham-menu" id="mobileNavClose">
                     <span></span>
@@ -44,12 +45,12 @@
                     <li class="nav__list-item"><a href="#about" class="nav__list-link">Обо мне</a></li>
                     <li class="nav__list-item"><a href="#projects" class="nav__list-link">Проекты</a></li>
                     <li class="nav__list-item"><a href="#skills" class="nav__list-link">Навыки</a></li>
-                    <li class="nav__list-item"><button class="btn-contact">Контакты</button></li>
+                    <li class="nav__list-item"><button class="btn-contact" data-fancybox
+                            data-src="#dialog-content">Контакты</button></li>
                 </ul>
             </div>
         </div>
     </section>
-
     <main class="main">
         <section class="promo">
             <div class="container">
@@ -61,7 +62,7 @@
                             создании и поддержке веб-приложений. Уверенно
                             владею HTML5, CSS3, JavaScript, а также имею опыт работы с React.
                             Использую инструменты верстки и сборки, такие как Webpack и Gulp.</p>
-                        <button class="btn-contact">Напишите мне</button>
+                        <button class="btn-contact" data-fancybox data-src="#dialog-content">Напишите мне</button>
                     </div>
                     <div class="promo__img">
                         <img src="./img/promo/hero.png" srcset="./img/promo/hero@2x.png 2x" alt="Hero">
@@ -69,7 +70,7 @@
                 </div>
             </div>
         </section>
-        <section data-aos="fade-up" data-aos-duration="4000" class="about" id="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="about__title title-2">Обо мне</h2>
                 <p class="about__desc">Меня зовут Данил, мне 20 лет. Я ищу новые возможности для профессионального роста
@@ -83,18 +84,18 @@
             <div class="container">
                 <h2 class="projects__title title-2">Проекты</h2>
                 <div class="projects__cards">
-                    <div class="card">
+                    <div class="card" data-fancybox="gallery" data-src="#cowork">
                         <div class="card__header">
-                            <img src="./img/card/image.jpg" srcset="./img/card/image@2x.jpg 2x" alt="project-img"
+                            <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
                                 class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title title-3">Название проекта</h3>
+                            <h3 class="card__title title-3">Коворкинг</h3>
                             <ul class="card__list">
                                 <li class="card__list-item">Javascript</li>
-                                <li class="card__list-item">PostgreSQL</li>
-                                <li class="card__list-item">React</li>
-                                <li class="card__list-item">Redux</li>
+                                <li class="card__list-item">Scss</li>
+                                <li class="card__list-item">Retina</li>
+                                <li class="card__list-item">БЭМ</li>
                             </ul>
                             <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
                                 Форма
@@ -103,18 +104,18 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-fancybox="gallery" data-src="#epicTravel">
                         <div class="card__header">
-                            <img src="./img/card/image.jpg" srcset="./img/card/image@2x.jpg 2x" alt="project-img"
+                            <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
                                 class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title title-3">Название проекта</h3>
+                            <h3 class="card__title title-3">ЭпикТрэвел</h3>
                             <ul class="card__list">
                                 <li class="card__list-item">Javascript</li>
-                                <li class="card__list-item">PostgreSQL</li>
-                                <li class="card__list-item">React</li>
-                                <li class="card__list-item">Redux</li>
+                                <li class="card__list-item">Scss</li>
+                                <li class="card__list-item">Retina</li>
+                                <li class="card__list-item">БЭМ</li>
                             </ul>
                             <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
                                 Форма
@@ -123,18 +124,18 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-fancybox="gallery" data-src="#cowork">
                         <div class="card__header">
-                            <img src="./img/card/image.jpg" srcset="./img/card/image@2x.jpg 2x" alt="project-img"
+                            <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
                                 class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title title-3">Название проекта</h3>
+                            <h3 class="card__title title-3">Коворкинг</h3>
                             <ul class="card__list">
                                 <li class="card__list-item">Javascript</li>
-                                <li class="card__list-item">PostgreSQL</li>
-                                <li class="card__list-item">React</li>
-                                <li class="card__list-item">Redux</li>
+                                <li class="card__list-item">Scss</li>
+                                <li class="card__list-item">Retina</li>
+                                <li class="card__list-item">БЭМ</li>
                             </ul>
                             <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
                                 Форма
@@ -143,18 +144,100 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-fancybox="gallery" data-src="#cowork">
                         <div class="card__header">
-                            <img src="./img/card/image.jpg" srcset="./img/card/image@2x.jpg 2x" alt="project-img"
+                            <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
                                 class="card__img">
                         </div>
                         <div class="card__body">
-                            <h3 class="card__title title-3">Название проекта</h3>
+                            <h3 class="card__title title-3">Коворкинг</h3>
                             <ul class="card__list">
                                 <li class="card__list-item">Javascript</li>
-                                <li class="card__list-item">PostgreSQL</li>
-                                <li class="card__list-item">React</li>
-                                <li class="card__list-item">Redux</li>
+                                <li class="card__list-item">Scss</li>
+                                <li class="card__list-item">Retina</li>
+                                <li class="card__list-item">БЭМ</li>
+                            </ul>
+                            <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                                Форма
+                                обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                                мобильная навигация.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__cards none" id="more-projects">
+                    <div class="card" data-fancybox="gallery-second" data-src="#cowork">
+                        <div class="card__header">
+                            <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
+                                class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title title-3">Коворкинг</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Javascript</li>
+                                <li class="card__list-item">Scss</li>
+                                <li class="card__list-item">Retina</li>
+                                <li class="card__list-item">БЭМ</li>
+                            </ul>
+                            <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                                Форма
+                                обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                                мобильная навигация.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" data-fancybox="gallery-second" data-src="#epicTravel">
+                        <div class="card__header">
+                            <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
+                                class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title title-3">ЭпикТрэвел</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Javascript</li>
+                                <li class="card__list-item">Scss</li>
+                                <li class="card__list-item">Retina</li>
+                                <li class="card__list-item">БЭМ</li>
+                            </ul>
+                            <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                                Форма
+                                обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                                мобильная навигация.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" data-fancybox="gallery-second" data-src="#cowork">
+                        <div class="card__header">
+                            <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
+                                class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title title-3">Коворкинг</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Javascript</li>
+                                <li class="card__list-item">Scss</li>
+                                <li class="card__list-item">Retina</li>
+                                <li class="card__list-item">БЭМ</li>
+                            </ul>
+                            <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                                Форма
+                                обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                                мобильная навигация.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" data-fancybox="gallery-second" data-src="#cowork">
+                        <div class="card__header">
+                            <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
+                                class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title title-3">Коворкинг</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Javascript</li>
+                                <li class="card__list-item">Scss</li>
+                                <li class="card__list-item">Retina</li>
+                                <li class="card__list-item">БЭМ</li>
                             </ul>
                             <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
                                 Форма
@@ -165,7 +248,7 @@
                     </div>
                 </div>
                 <div class="projects__button">
-                    <button class="btn-see-projects">Посмотреть все проекты</button>
+                    <button class="btn-see-projects" id="btn-more-porject">Посмотреть все проекты</button>
                 </div>
             </div>
         </section>
@@ -241,6 +324,7 @@
         </div>
     </footer>
 
+    <!-- Модальное окно -->
     <section class="modal__body" id="dialog-content">
         <div class="modal__header">
             <h2 class="modal__title">Контакты</h2>
@@ -285,6 +369,54 @@
             </ul>
         </div>
     </section>
+
+    <!-- Модальное окно карточки проекта-->
+    <div class="none">
+        <section class="card-modal" id="cowork">
+            <div class="card" data-src="#cowork">
+                <div class="card__header">
+                    <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
+                        class="card__img">
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title title-3">Коворкинг</h3>
+                    <ul class="card__list">
+                        <li class="card__list-item">Javascript</li>
+                        <li class="card__list-item">Scss</li>
+                        <li class="card__list-item">Retina</li>
+                        <li class="card__list-item">БЭМ</li>
+                    </ul>
+                    <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                        Форма
+                        обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                        мобильная навигация.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="card-modal" id="epicTravel">
+            <div class="card" data-src="#cowork">
+                <div class="card__header">
+                    <img src="./img/card/cowork.jpg" srcset="./img/card/cowork@2x.jpg 2x" alt="project-img"
+                        class="card__img">
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title title-3">ЭпикТрэвел</h3>
+                    <ul class="card__list">
+                        <li class="card__list-item">Javascript</li>
+                        <li class="card__list-item">Scss</li>
+                        <li class="card__list-item">Retina</li>
+                        <li class="card__list-item">БЭМ</li>
+                    </ul>
+                    <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                        Форма
+                        обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                        мобильная навигация.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="./js/fancybox/fancybox.umd.js"></script>
     <script src="./js/main.js"></script>
