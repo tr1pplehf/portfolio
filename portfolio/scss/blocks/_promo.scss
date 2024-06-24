@@ -1,0 +1,33 @@
+.promo__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    @include tablet {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+ 
+.promo__speciality {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.promo__title {
+    margin-bottom: 10px;
+}
+
+.promo__desc {
+    margin-bottom: 30px;
+    line-height: 1.6;
+
+    @include tablet {
+        line-height: 2;
+    }
+}
+
+.promo__img {
+    flex-shrink: 0;
+}

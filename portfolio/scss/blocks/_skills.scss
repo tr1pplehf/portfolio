@@ -1,0 +1,44 @@
+.skills {
+    margin-bottom: 260px;
+    scroll-margin-top: 30px;
+    
+    @include tablet {
+        margin-bottom: 130px;
+    }
+}
+
+.skills__title {
+    margin-bottom: 50px;
+    
+    @include tablet {
+        text-align: center;
+    }
+}
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+
+    @include tablet {
+        justify-content: center;
+    }
+
+    @include mobile {
+        gap: 70px;
+    }
+}
+
+.skills__list-item {
+    text-align: center;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+}

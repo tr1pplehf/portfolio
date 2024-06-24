@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #041F31;
+    color: #BDEBEA;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}

@@ -1,0 +1,50 @@
+.card {
+    width: 520px;
+    background-color: #222525;
+    border-radius: 10px;
+
+    @include mobile {
+        width: 300px;
+    }
+}
+
+.card__img {
+    border-radius: 10px;
+}
+
+.card__body {
+    padding: 25px 20px;
+}
+
+.card__title {
+    margin-bottom: 10px;
+}
+
+.card__list {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+    color: #1f2626;
+}
+
+.card__list-item {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+   
+}
+
+.card__desc {
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    @include mobile {
+        font-size: 14px;
+    }
+}

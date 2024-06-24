@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
+    <title>Данил Якименко - Фронтенд разработчик</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a href="#about" class="nav__list-link">Обо мне</a></li>
+                        <li class="nav__list-item"><a href="#projects" class="nav__list-link">Проекты</a></li>
+                        <li class="nav__list-item"><a href="#skills" class="nav__list-link">Навыки</a></li>
+                        <li class="nav__list-item"><button class="btn-contact">Контакты</button></li>
+                    </ul>
+                </nav>
+                <div class="ham-menu" id="mobileNavOpen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="mobile-nav">
+        <div class="container">
+            <div class="mobile-nav__header">
+                <div class="ham-menu" id="mobileNavClose">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-nav__body">
+                <ul class="nav__list" id="mobileNavList">
+                    <li class="nav__list-item"><a href="#about" class="nav__list-link">Обо мне</a></li>
+                    <li class="nav__list-item"><a href="#projects" class="nav__list-link">Проекты</a></li>
+                    <li class="nav__list-item"><a href="#skills" class="nav__list-link">Навыки</a></li>
+                    <li class="nav__list-item"><button class="btn-contact">Контакты</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="promo">
+            <div class="container">
+                <div class="promo__row">
+                    <div class="promo__content">
+                        <p class="promo__speciality">Фронтенд разработчик</p>
+                        <h1 class="promo__title title-1">Данил Якименко</h1>
+                        <p class="promo__desc">Я профессиональный веб-разработчик с более чем 2-летним опытом работы в
+                            создании и поддержке веб-приложений. Уверенно
+                            владею HTML5, CSS3, JavaScript, а также имею опыт работы с React.
+                            Использую инструменты верстки и сборки, такие как Webpack и Gulp.</p>
+                        <button class="btn-contact">Напишите мне</button>
+                    </div>
+                    <div class="promo__img">
+                        <img src="./img/promo/hero.png" srcset="./img/promo/hero@2x.png 2x" alt="Hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="4000" class="about" id="about">
+            <div class="container">
+                <h2 class="about__title title-2">Обо мне</h2>
+                <p class="about__desc">Меня зовут Данил, мне 20 лет. Я ищу новые возможности для профессионального роста
+                    и готов принять вызов разработки уникальных и качественных
+                    веб-приложений. Готов к сотрудничеству с крупными и перспективными компаниями, где смогу применить
+                    свои знания и навыки
+                    для достижения общих целей.</p>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="projects__title title-2">Проекты</h2>
+                <div class="projects__cards">
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="./img/card/image.jpg" srcset="./img/card/image@2x.jpg 2x" alt="project-img"
+                                class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title title-3">Название проекта</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Javascript</li>
+                                <li class="card__list-item">PostgreSQL</li>
+                                <li class="card__list-item">React</li>
+                                <li class="card__list-item">Redux</li>
+                            </ul>
+                            <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                                Форма
+                                обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                                мобильная навигация.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="./img/card/image.jpg" srcset="./img/card/image@2x.jpg 2x" alt="project-img"
+                                class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title title-3">Название проекта</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Javascript</li>
+                                <li class="card__list-item">PostgreSQL</li>
+                                <li class="card__list-item">React</li>
+                                <li class="card__list-item">Redux</li>
+                            </ul>
+                            <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                                Форма
+                                обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                                мобильная навигация.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="./img/card/image.jpg" srcset="./img/card/image@2x.jpg 2x" alt="project-img"
+                                class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title title-3">Название проекта</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Javascript</li>
+                                <li class="card__list-item">PostgreSQL</li>
+                                <li class="card__list-item">React</li>
+                                <li class="card__list-item">Redux</li>
+                            </ul>
+                            <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                                Форма
+                                обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                                мобильная навигация.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="./img/card/image.jpg" srcset="./img/card/image@2x.jpg 2x" alt="project-img"
+                                class="card__img">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title title-3">Название проекта</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Javascript</li>
+                                <li class="card__list-item">PostgreSQL</li>
+                                <li class="card__list-item">React</li>
+                                <li class="card__list-item">Redux</li>
+                            </ul>
+                            <p class="card__desc">Верстка лендинга. Одностраничный сайт с информацией о коворкинге.
+                                Форма
+                                обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства,
+                                мобильная навигация.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__button">
+                    <button class="btn-see-projects">Посмотреть все проекты</button>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="skills__title title-2">Навыки</h2>
+                <ul class="skills__list">
+                    <li class="skills__list-item">
+                        <img src="./img/skills/javascript.svg" alt="JavaScript">
+                        <p>javascript</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <img src="./img/skills/typescript.svg" alt="typescript">
+                        <p>typescript</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <img src="./img/skills/git.svg" alt="git">
+                        <p>git</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <img src="./img/skills/react.svg" alt="react">
+                        <p>react</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <img src="./img/skills/postgresql.svg" alt="postgresql">
+                        <p>postgresql</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <img src="./img/skills/scss.svg" alt="scss">
+                        <p>scss</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__column">
+                <div class="footer__socials">
+                    <ul class="socials__list">
+                        <li class="socials__list-item">
+                            <a href="https://t.me/never_divine">
+                                <img src="./img/socials/telegram.svg" alt="Telegram">
+                                <p>Telegram</p>
+                            </a>
+                        </li>
+                        <li class="socials__list-item">
+                            <a href="https://vk.com/never_divine">
+                                <img src="./img/socials/vk.svg" alt="VK">
+                                <p>VK</p>
+                            </a>
+                        </li>
+                        <li class="socials__list-item">
+                            <a href="https://github.com/tr1pplehf">
+                                <img src="./img/socials/github.svg" alt="GitHub">
+                                <p>GitHub</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <nav class="nav nav--footer">
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a href="#about" class="nav__list-link">Обо мне</a></li>
+                            <li class="nav__list-item"><a href="#projects" class="nav__list-link">Проекты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__copyright">
+                    <p>Данил Якименко 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/mobile-nav.js"></script>
+</body>
+
+</html>
