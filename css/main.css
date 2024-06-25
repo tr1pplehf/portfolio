@@ -307,9 +307,29 @@ body {
 }
 
 .nav__list-link {
+  padding-bottom: 3px;
+  position: relative;
   font-weight: 500;
   color: #BDEBEA;
   white-space: nowrap;
+}
+.nav__list-link:hover {
+  opacity: 0.8;
+}
+.nav__list-link::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 1px;
+  transform: translateX(-50%);
+  background: #ffffff;
+  transition: 0.4s;
+}
+.nav__list-link:hover::after {
+  width: 100%;
 }
 @media (max-width: 767px) {
   .nav__list-link {
@@ -442,7 +462,7 @@ body {
   transition: all 0.2s ease-in;
   width: 16px;
   height: 13px;
-  background-image: url("./../img/icons/tick.svg");
+  background-image: url("./../../img/icons/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -473,8 +493,8 @@ body {
   .top-link {
     right: 10px;
     bottom: 20px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 }
 

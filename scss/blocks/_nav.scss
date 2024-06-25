@@ -28,9 +28,35 @@
 }
 
 .nav__list-link {
+    padding-bottom: 3px;
+    position: relative;
+
     font-weight: 500;
     color: #BDEBEA;
     white-space: nowrap;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        bottom: 0;
+
+        display: block;
+        width: 0;
+        height: 1px;
+        transform: translateX(-50%);
+
+        background: #ffffff;
+        transition: 0.4s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
 
     @include mobile {
         font-size: 14px;
