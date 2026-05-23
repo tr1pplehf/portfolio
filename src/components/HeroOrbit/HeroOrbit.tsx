@@ -1,6 +1,6 @@
 import {PropsWithChildren} from "react";
 
-export const HeroOrbit = ({
+const HeroOrbit = ({
   children,
   size,
   rotation
