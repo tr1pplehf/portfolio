@@ -52,10 +52,13 @@ export const Projects = () => {
       <div className="container">
         <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences." />
         <div className="flex flex-col gap-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, index) => (
             <Card
-              className="px-8 pt-8 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
-              key={project.title}
+              className="px-8 pt-8 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16 sticky"
+              style={{
+                top: `calc(64px + ${index * 40}px)`,
+              }}
+              key={index}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
