@@ -1,20 +1,8 @@
 import StarIcon from '@/assets/icons/star.svg'
 import {Fragment} from 'react'
+import words from '@/components/Tape/words'
 
-const words = [
-  "Производительность",
-  "Доступность",
-  "Безопасность",
-  "Интерактивность",
-  "Масштабируемость",
-  "Удобноство для пользователей",
-  "Отзывчивость",
-  "Поддерживаемость",
-  "Оптимизация для поиска",
-  "Надежность",
-]
-
-export const Tape = () => {
+const Tape = () => {
   return (
     <div className="py-16 lg:py-24 overflow-x-clip">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">
@@ -41,3 +29,5 @@ export const Tape = () => {
     </div>
   )
 };
+
+export default Tape
