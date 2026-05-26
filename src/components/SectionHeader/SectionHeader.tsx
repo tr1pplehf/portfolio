@@ -8,7 +8,6 @@ const SectionHeader = ({
   description: string;
 }) => {
 
-
   return (
     <>
       <div className="flex justify-center">
