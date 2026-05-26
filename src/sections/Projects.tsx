@@ -6,6 +6,7 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
+import Button from '@/components/Button'
 
 
 const portfolioProjects = [
@@ -112,24 +113,8 @@ export const Projects = () => {
                       className="flex md:gap-4 sm:flex-col md:flex-row"
                       key={index}
                     >
-                      <a
-                        className="flex mb-8 lg:mb-0"
-                        href={link.demoLink}
-                      >
-                      <span className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
-                        <span>Демо</span>
-                        <ArrowUpRightIcon className="size-4" />
-                      </span>
-                      </a>
-                      <a
-                        className="flex mb-8 lg:mb-0"
-                        href={link.githubLink}
-                      >
-                      <span className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
-                        <span>GitHub</span>
-                        <ArrowUpRightIcon className="size-4" />
-                      </span>
-                      </a>
+                      <Button label="Демо" href={link.demoLink} />
+                      <Button label="GitHub" href={link.githubLink} />
                     </div>
                   ))}
                 </div>
