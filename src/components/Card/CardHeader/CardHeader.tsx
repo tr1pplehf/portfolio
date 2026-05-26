@@ -8,7 +8,7 @@ const CardHeader = ({
 }: {
   className?: string;
   title: string;
-  description: string;
+  description?: string;
 }) => {
   return (
     <div className={twMerge("flex flex-col p-6 md:py-8 md:px-10", className)}>
@@ -18,7 +18,7 @@ const CardHeader = ({
           {title}
         </h3>
       </div>
-      <p className="text-sm lg:text-base max-w-xs text-white/60">
+      <p className="text-sm lg:text-base text-white/60">
         {description}
       </p>
     </div>

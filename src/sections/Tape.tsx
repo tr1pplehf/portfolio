@@ -2,17 +2,16 @@ import StarIcon from '@/assets/icons/star.svg'
 import {Fragment} from 'react'
 
 const words = [
-  'Performant',
-  'Accessible',
-  'Secure',
-  'Interactive',
-  'Scalable',
-  'User Friendly',
-  'Responsive',
-  'Maintainable',
-  'Search Optimized',
-  'Usable',
-  'Reliable',
+  "Производительность",
+  "Доступность",
+  "Безопасность",
+  "Интерактивность",
+  "Масштабируемость",
+  "Удобноство для пользователей",
+  "Отзывчивость",
+  "Поддерживаемость",
+  "Оптимизация для поиска",
+  "Надежность",
 ]
 
 export const Tape = () => {

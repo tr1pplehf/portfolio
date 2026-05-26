@@ -11,7 +11,7 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Данил Якименко - Frontend разработчик.",
+  title: "Данил Якименко - Frontend Developer.",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="ru">
       <body className={twMerge(
         inter.variable,
         calistoga.variable,

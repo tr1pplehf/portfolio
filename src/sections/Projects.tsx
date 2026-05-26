@@ -1,56 +1,83 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import streamvibeImage from "@/assets/images/stream-vibe.jpg";
+import futuretechImage from "@/assets/images/future-tech.jpg";
+import positivusImage from "@/assets/images/positivus.jpg";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg'
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 
+
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Пет-проект",
+    year: "2026",
+    title: "Stream Vibe",
     results: [
-      {title: "Enhanced user experience by 40%"},
-      {title: "Improved site speed by 50%"},
-      {title: "Increased mobile traffic by 35%"},
+      {title: "JSX"},
+      {title: "SCSS"},
+      {title: "JavaScript, Vite, Minista, БЭМ"},
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    links: [
+      {
+        demoLink: "https://tr1pplehf.github.io/future-tech/",
+        githubLink: "https://github.com/tr1pplehf"
+      }
+    ],
+
+    image: streamvibeImage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Пет-проект",
+    year: "2026",
+    title: "Future Tech",
     results: [
-      {title: "Boosted sales by 20%"},
-      {title: "Expanded customer reach by 35%"},
-      {title: "Increased brand awareness by 15%"},
+      {title: "JSX"},
+      {title: "SCSS"},
+      {title: "JavaScript, Vite, Minista, БЭМ"},
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    links: [
+      {
+        demoLink: "https://tr1pplehf.github.io/future-tech/",
+        githubLink: "https://github.com/tr1pplehf"
+      }
+    ],
+
+    image: futuretechImage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Пет-проект",
+    year: "2026",
+    title: "Positivus",
     results: [
-      {title: "Enhanced user experience by 40%"},
-      {title: "Improved site speed by 50%"},
-      {title: "Increased mobile traffic by 35%"},
+      {title: "JSX"},
+      {title: "SCSS"},
+      {title: "JavaScript, Vite, Minista, БЭМ"},
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    links: [
+      {
+        demoLink: "https://tr1pplehf.github.io/future-tech/",
+        githubLink: "https://github.com/tr1pplehf"
+      }
+    ],
+
+    image: positivusImage,
   },
+
 ];
 
 export const Projects = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section
+      className="pb-16 lg:py-24"
+      id="portfolio"
+    >
       <div className="container">
-        <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences." />
+        <SectionHeader
+          eyebrow="Реальные результаты"
+          title="Мои проекты"
+          description="Каждый проект — это уникальная часть моего путешествия в разработке, созданные с упором на пользовательский опыт и результат."
+        />
         <div className="flex flex-col gap-20">
           {portfolioProjects.map((project, index) => (
             <Card
@@ -60,7 +87,7 @@ export const Projects = () => {
               }}
               key={index}
             >
-              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+              <div className="sm:flex sm:flex-col lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text mb-2 md:mb-5">
                     <span>{project.company}</span>
@@ -80,19 +107,35 @@ export const Projects = () => {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    className="flex mb-8 lg:mb-0"
-                    href={project.link}
-                  >
-                <span className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
-                  <span>Visit Live Site</span>
-                  <ArrowUpRightIcon className="size-4" />
-                </span>
-                  </a>
+                  {project.links.map((link, index) => (
+                    <div
+                      className="flex md:gap-4 sm:flex-col md:flex-row"
+                      key={index}
+                    >
+                      <a
+                        className="flex mb-8 lg:mb-0"
+                        href={link.demoLink}
+                      >
+                      <span className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
+                        <span>Демо</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </span>
+                      </a>
+                      <a
+                        className="flex mb-8 lg:mb-0"
+                        href={link.githubLink}
+                      >
+                      <span className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
+                        <span>GitHub</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </span>
+                      </a>
+                    </div>
+                  ))}
                 </div>
                 <div className="relative">
                   <Image
-                    className="-mb-4 md:-mb-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="-mb-4 md:-mb-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-xl "
                     src={project.image}
                     alt={project.title}
                   />

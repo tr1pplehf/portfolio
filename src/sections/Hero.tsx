@@ -8,7 +8,10 @@ import HeroOrbit from "@/components/HeroOrbit";
 
 export const Hero = () => {
   return (
-    <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <section
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip min-h-lvh"
+      id="main"
+    >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] pointer-events-none">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -126,24 +129,25 @@ export const Hero = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
-            <p className="text-sm font-medium">Available for new projects</p>
+            <p className="text-sm font-medium">Доступен для новых проектов</p>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center tracking-wide mb-4">Building Exceptional User Experiences</h1>
-          <p className="text-center text-white/60 mb-8 md:text-lg">
-            I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project.
-          </p>
+          <h1 className="font-serif text-3xl md:text-5xl text-center tracking-wide mb-4">Привет! Я Данил</h1>
+          <p className="text-center text-white/60 mb-8 md:text-lg">Фронтенд разработчик, специализирующийся на создании современных веб-приложений с использованием React, TypeScript и Tailwind CSS.</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-          <button className="hero-button border-white/15">
-            <span className="font-semibold">Explore My Work</span>
+          <a
+            className="hero-button border-white/15"
+            href="#portfolio"
+          >
+            <span className="font-semibold">Посмотреть проекты</span>
             <ArrowDown className="size-4" />
-          </button>
-          <button className="hero-button border-white bg-white text-gray-900">
+          </a>
+          <a className="hero-button border-white bg-white text-gray-900">
             <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
+            <span className="font-semibold">Связаться со мной</span>
+          </a>
         </div>
       </div>
     </section>
